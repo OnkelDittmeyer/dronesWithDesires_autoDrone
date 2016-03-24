@@ -8,7 +8,7 @@ void idleSensors(){
     for (int i = 0; i < sensorNum; i++) {
       if (sensorValues[i] < sensorThreshold) {
         if (!motors[i].onOff && idleMotors < idleMax+1) {
-          motors[i].idle(2500, 0);
+          motors[i].idle(sensorFlap, sensorDelay);
         }
       }
     }

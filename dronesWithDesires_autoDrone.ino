@@ -30,6 +30,9 @@ int delayMax = 60000;    // max 60sec
 boolean sensorActive = true; // true = on, false = off
 int sensorThreshold = 100; // lower = have to be closer before triggered (0-1024)
 
+int sensorFlap = 5000; //duration how long it is going to flap after someone came close
+int sensorDelay = 0;    //how long after it can be triggered again
+
 //------------------------------------------------------------------------------------------
 
 //shiftReg setup
